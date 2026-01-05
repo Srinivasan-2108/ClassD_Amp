@@ -61,4 +61,8 @@
 ## Step7:Use the 3D Viewer to inspect component placement and board layout.
 ![Pcbdesign](pcbtop.png)
 
+# CONCLUSION:
+## The project successfully implements a Class-D audio amplifier using discrete components, demonstrating efficient PWM-based amplification and high-frequency power switching. Simulation and PCB design validated the functionality and practical feasibility of the system using open-source tools.
+
+
 
