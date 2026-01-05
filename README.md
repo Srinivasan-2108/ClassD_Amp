@@ -41,4 +41,24 @@
 ## The input audio signal (Vin) is a low-amplitude sine wave, typically below 1 V. A 555 timer operating from a 12 V supply generates a high-frequency triangular carrier waveform with an amplitude between approximately one-third and two-thirds of the supply voltage. The audio signal is compared with this carrier to produce a PWM signal switching between 0 V and 12 V, with its duty cycle varying in proportion to the audio signal amplitude. This PWM signal drives the gate of the NMOS transistor, which switches the load at high frequency and produces a high-power PWM waveform at the drain. After passing through a passive low-pass filter, the switching components are removed and an amplified audio output is obtained. The recovered audio output is an analog waveform whose peak voltage is typically several volts (up to approximately 10–12 V peak, depending on the supply and load), suitable for driving the output stage.
 
 ### NOTE: 
-![Schematic Diagram](
+![Schematic Diagram](Sch.png)
+#### •R5 & R6 – Used to generate the required DC offset reference voltage for proper PWM comparison.
+#### •C4 – Used to smooth and stabilize the DC offset voltage.
+#### •C5 – Used to suppress high-frequency noise affecting the DC offset.
+
+# HOW TO RUN/USE: 
+## Step1:Open the Class-D amplifier schematic file in LTspice.
+## Step2:Run a transient (.tran 5m) simulation to observe time-domain waveforms.
+![transient](tran.png)
+## Step3:Verify the triangular carrier, PWM output, and MOSFET gate waveform.
+![Graphical Rep](graph.png)
+## Step4:Observe the filtered audio output waveform at the output node.
+![Audioop](Audio_out.png)
+## Step5:Open the schematic in KiCad and perform Electrical Rule Check (ERC).
+[ErcCheck](erc.png)
+## Step6:Open the PCB editor, complete routing, and verify using Design Rule Check (DRC).
+![Drccheck](drc.png)
+## Step7:Use the 3D Viewer to inspect component placement and board layout.
+![Pcbdesign](pcbtop.png)
+
+
