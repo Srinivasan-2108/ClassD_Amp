@@ -28,6 +28,11 @@
 ### 2) KiCad 
 ### 3) Github
 
+# DESIGNING:
+## PC Board Design: The PCB was designed with dimensions of 100 mm × 40 mm to accommodate all components while maintaining proper spacing between high-frequency and low-level signal traces. 2 mm radius of fillets were added to improve mechanical strength and ease of fabrication. The compact board size ensures reliable assembly without overcrowding.
+## Layer Designing: The PCB uses two layers , the F.Cu (Front Copper) layer for routing signal, PWM, and power traces. The B.Cu (Bottom Copper) layer is used for additional routing and grounding. Solder mask layers protect the copper tracks and prevent solder bridging, while the silkscreen layer is used for component labels, reference designators, and polarity markings. The Edge.Cuts layer defines the physical shape and dimensions of the PCB.
+## Trace Width Designing: A uniform trace width of 0.4 mm was used throughout the PCB for both signal and power routing. This width provides adequate current-carrying capability for the low-to-moderate currents involved in the circuit while ensuring easy routing, reliable fabrication, and good mechanical strength. Using a consistent trace width also simplifies the layout and reduces manufacturing complexity.
+
 # JUSTIFICATION(LTspice):
 ## • NE555 Timer IC: Used to generate a stable high-frequency carrier waveform for PWM generation. Selected for its simplicity, reliability, and wide availability.
 ## • LM358 Operational Amplifier: Used as a comparator to generate PWM by comparing the audio signal with the carrier waveform. Chosen for its single-supply operation and suitability for low-frequency audio applications.
