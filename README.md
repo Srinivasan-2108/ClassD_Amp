@@ -49,13 +49,13 @@
 # HOW TO RUN/USE: 
 ## Step1:Open the Class-D amplifier schematic file in LTspice.
 ## Step2:Run a transient (.tran 5m) simulation to observe time-domain waveforms.
-![transient](tran.png)
+![transient](Transient.png)
 ## Step3:Verify the triangular carrier, PWM output, and MOSFET gate waveform.
-![Graphical Rep](graph.png)
+![Graphical Rep](Graph.png)
 ## Step4:Observe the filtered audio output waveform at the output node.
-![Audioop](Audio_out.png)
+![Audioop](Audioout.png)
 ## Step5:Open the schematic in KiCad and perform Electrical Rule Check (ERC).
-[ErcCheck](erc.png)
+![ErcCheck](erc.png)
 ## Step6:Open the PCB editor, complete routing, and verify using Design Rule Check (DRC).
 ![Drccheck](drc.png)
 ## Step7:Use the 3D Viewer to inspect component placement and board layout.
