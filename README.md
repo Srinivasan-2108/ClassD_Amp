@@ -53,7 +53,7 @@
 ## Step3:Verify the triangular carrier, PWM output, and MOSFET gate waveform.
 ![Graphical Rep](Graph.png)
 ## Step4:Observe the filtered audio output waveform at the output node.
-![Audioop](Audioout.png)
+![Audioop](Audio_output.png)
 ## Step5:Open the schematic in KiCad and perform Electrical Rule Check (ERC).
 ![ErcCheck](erc.png)
 ## Step6:Open the PCB editor, complete routing, and verify using Design Rule Check (DRC).
