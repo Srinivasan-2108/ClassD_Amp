@@ -37,3 +37,8 @@
 ## Capacitors: (i)0.01 µF – Used in the timer control/timing circuit to stabilize waveform generation and suppress noise.(ii)0.1 µF – Used as a decoupling capacitor to filter high-frequency supply noise near ICs.(iii)1 µF – Used for coupling and filtering to block DC components while passing low-frequency audio signals.
 
 # CIRCUIT WORKING & DESIGN:
+![Circuit Diagram](ClassD_Amp.png)
+## The input audio signal (Vin) is a low-amplitude sine wave, typically below 1 V. A 555 timer operating from a 12 V supply generates a high-frequency triangular carrier waveform with an amplitude between approximately one-third and two-thirds of the supply voltage. The audio signal is compared with this carrier to produce a PWM signal switching between 0 V and 12 V, with its duty cycle varying in proportion to the audio signal amplitude. This PWM signal drives the gate of the NMOS transistor, which switches the load at high frequency and produces a high-power PWM waveform at the drain. After passing through a passive low-pass filter, the switching components are removed and an amplified audio output is obtained. The recovered audio output is an analog waveform whose peak voltage is typically several volts (up to approximately 10–12 V peak, depending on the supply and load), suitable for driving the output stage.
+
+### NOTE: 
+![Schematic Diagram](
